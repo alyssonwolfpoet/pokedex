@@ -7,26 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podekex</title>
 
+    <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS-->
+    <link rel="stylesheet" href="/assets/css/global.css">
 </head>
 
 <body>
 
-    <h1>meu primeiro site</h1>
-    <p>Meu primeiro site esta sendo feito junto de um curso da dio</p>
-    <button id="btnTeste" type="button">teste</button>
+    <section class="content">
+        <h1>Pokedex</h1>
+        <!--<ul></ul>-->
+        <ol>
+            <li>
+                bulbasaur
+            </li>
+            <li>
+                ivysaur
+            </li>
+            <li>
+                venosour
+            </li>
+        </ol>
+    </section>
 
-    <script>
-        const btnTeste = document.getElementById("btnTeste")
-        console.log(btnTeste);
-        btnTeste.addEventListener("click", function () {
-            console.log('clickou no botão')
-            alert('teste')
-        })
-
-    </script>
+    <!-- Nosso js-->
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
