@@ -1,6 +1,28 @@
 Requisisão HTTP
 
-URL: https://pokeapi.co/api/v2/pokemon/
+URL: https://pokeapi.co/api/v2/pokemon/ ?type=grass&name=1
         ${IP}/${path = caminho de identificação do recurso}
 
 Request Method: GET | POST | PUT | DELETE | PATCH
+
+Query string
+type = grass
+name = 1
+
+https://pokeapi.co/api/v2/pokemon/?offset=0&limit=2
+https://pokeapi.co/api/v2/pokemon/?offset=2&limit=2
+
+Request Headers
+        configuração
+        accept-language: 
+                pt-BR,
+                pt;q=0.9,
+                en-US;q=0.8,
+                en;q=0.7
+        Authorization: Bearer
+
+Response Headeres
+        configuração
+
+
+BODY
