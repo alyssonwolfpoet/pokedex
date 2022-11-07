@@ -23,6 +23,22 @@ Request Headers
 
 Response Headeres
         configuração
+        content-type: apliccation/json
 
+Request BODY
+{
+        "name": "Teste"
+}
 
-BODY
+STATUS CODE: 200 ok
+200 - sucesso
+204 - no content
+300 erro direct
+400 erro cliente
+500 erro interno do servidor
+
+Response Headeres
+ como a mensagem esta configurada
+
+Response Body
+        mensagem em si
