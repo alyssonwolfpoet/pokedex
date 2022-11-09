@@ -6,33 +6,7 @@ const limit = 10;
 const url = `https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`;
 
 fetch(url)
-    .then(/*function*/ (response) => {
-    /*console.log(response);*/
-    /*response
-        .json()
-        .then(function (responseBody) {
-                console.log(responseBody)
-                
-        })*/
-        return response.json()
-    })
-    .then(function(jsonBody){
-        console.log(jsonBody)
-    })
-    .catch(function (erro) {
-        console.error(erro);
-    })
-    .finally(function () {
-        console.log('Requisição concluida!')
-    }) 
-
-/*
-try {
-    
-} catch (error) {
-    
-} finally{
-
-}
-*/
-
+    .then((response) => response.json())
+    .then((jsonBody) => console.log(jsonBody))
+    .catch( (erro) => console.error(erro))
+/*arrow function js*/
