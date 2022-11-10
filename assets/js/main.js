@@ -12,7 +12,7 @@ function convertPokemonToLi(pokemon) {
             <ol class="types">
                 ${convertPokemonTypesLi(pokemon.types).join("")}
             </ol>
-            <img src="${pokemon.sprites.other.dream_world.font_default}"
+            <img src="${pokemon.sprites.other.dream_world.front_default}"
                 alt="${pokemon.name}">
         </div>
     </li>
