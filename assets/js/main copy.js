@@ -26,26 +26,24 @@ function convertPokemonToLi(pokemon) {
 // console.log(document.getElementsByClassName('pokemonList'))
 const pokemonList = document.getElementById('pokemonList')
 
-pokeApi.getPokemons().then((pokemons = []) => {
+// fetch(url)
+//     .then((response) => response.json())
+//     .then((jsonBody) => jsonBody.results)
+//     .then((pokemons) => {
+//         for (let i = 0; i < pokemons.length; i++) {
+//             const pokemon = pokemons[i];
+//             pokemonList.innerHTML += convertPokemonToLi(pokemon)
+//             // console.log(convertPokemonToLi(pokemon))
 
-    // const newList = pokemons.map((pokemon) => {
-    //     return convertPokemonToLi(pokemon)
-    // })
+//         }
+//     })
+//     .catch((erro) => console.error(erro))
+pokeApi.getPokemons().then((pokemons) => {
+    for (let i = 0; i < pokemons.length; i++) {
+        const pokemon = pokemons[i];
+        pokemonList.innerHTML += convertPokemonToLi(pokemon)
+        // console.log(convertPokemonToLi(pokemon))
 
-    // const newList = pokemons.map((pokemon) => convertPokemonToLi(pokemon))
-    // const newList = pokemons.map((pokemon) => convertPokemonToLi(pokemon)).join("")
-    // const newList = pokemons.map(convertPokemonToLi).join("")
-
-    // const newHtml = newList.join("")
-    // pokemonList.innerHTML += newHtml
-    pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join("")
-    
-
-    // const listIntems = []
-
-    // for (let i = 0; i < pokemons.length; i++) {
-    //     const pokemon = pokemons[i];
-    //     listIntems.push(convertPokemonToLi(pokemon))
-    // }
-    // console.log(listIntems)
+    }
 })
+/*arrow function js*/
