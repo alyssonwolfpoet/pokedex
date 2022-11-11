@@ -45,3 +45,10 @@ Response Body
 
 ctrl + K + C comenta varias linhas
 ctrl + k + u para descomentar
+
+query string
+Path params de uma requisição
+API e WebService
+serve Body de uma requisição
+Headers de uma requisição
+URL de uma requisição
